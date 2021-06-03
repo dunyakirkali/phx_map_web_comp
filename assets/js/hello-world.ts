@@ -1,8 +1,13 @@
-import { controller } from "@github/catalyst";
+import { controller, target } from "@github/catalyst";
 
 @controller
 class HelloWorldElement extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = "Hello World!";
+  @target name: HTMLElement;
+  @target output: HTMLElement;
+
+  greet() {
+    this.output.textContent = `Hello, ${this.name.value}!`;
   }
 }
+
+export default HelloWorldElement;

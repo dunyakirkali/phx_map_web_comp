@@ -12,8 +12,7 @@ import css from "../css/app.css";
 //     import {Socket} from "phoenix"
 //     import socket from "./socket"
 //
-// import 'hello-world' from "./hello-world"
 import "phoenix_html"
-import greet from "./hello";
+import HelloWorldElement from "./hello-world"
 
-document.querySelector(".alert-danger").innerHTML = greet("Phoenix");
+const t = new HelloWorldElement();

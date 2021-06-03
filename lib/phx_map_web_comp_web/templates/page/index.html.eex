@@ -1,1 +1,10 @@
 <hello-world>
+  <input data-target="hello-world.name" type="text">
+
+  <button data-action="click:hello-world#greet">
+    Greet
+  </button>
+
+  <span data-target="hello-world.output">
+  </span>
+</hello-world>
