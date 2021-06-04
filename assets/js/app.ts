@@ -15,4 +15,5 @@ import css from "../css/app.css";
 import "phoenix_html"
 import HelloWorldElement from "./hello-world"
 
-const t = new HelloWorldElement();
+
+new HelloWorldElement();
