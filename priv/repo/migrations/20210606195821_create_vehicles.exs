@@ -5,6 +5,8 @@ defmodule PhxMapWebComp.Repo.Migrations.CreateVehicles do
     create table(:vehicles) do
       add :identificationCode, :string
       add :location, :geometry
+
+      timestamps()
     end
   end
 
